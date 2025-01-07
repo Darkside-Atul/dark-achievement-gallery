@@ -20,8 +20,20 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-primary relative overflow-hidden">
-      {/* Neural network inspired background */}
+      {/* Neural network inspired background with video */}
       <div className="fixed inset-0 bg-[#1A1F2C]">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        >
+          <source
+            src="https://assets.codepen.io/3364143/7btrrd.mp4"
+            type="video/mp4"
+          />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-primary to-primary"></div>
         <div className="absolute inset-0 opacity-30">
           <div className="absolute h-[500px] w-[500px] rounded-full bg-purple-600/20 blur-[100px] -top-40 -left-20"></div>

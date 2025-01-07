@@ -30,7 +30,7 @@ const Index = () => {
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         >
           <source
-            src="https://assets.codepen.io/3364143/7btrrd.mp4"
+            src="https://cdn.pixabay.com/vimeo/328714798/Neural%20Network%20-%2022567.mp4?width=1280&hash=0c6c5ce7bc2f0669d9851f5671c0b3c2d4b5c677"
             type="video/mp4"
           />
         </video>

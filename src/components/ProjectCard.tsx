@@ -10,15 +10,15 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, githubUrl, demoUrl, technologies }: ProjectCardProps) => {
   return (
-    <div className="bg-secondary/50 backdrop-blur-sm rounded-lg p-6 hover:transform hover:scale-[1.02] transition-all animate-fade-in">
-      <h3 className="text-xl font-semibold text-white mb-3">{title}</h3>
+    <div className="backdrop-blur-sm bg-secondary/30 rounded-lg p-6 hover:transform hover:scale-[1.02] transition-all animate-fade-in shadow-xl border border-accent/10">
+      <h3 className="text-xl font-semibold text-white mb-3 bg-clip-text text-transparent bg-gradient-to-r from-accent to-white">{title}</h3>
       <p className="text-gray-300 mb-4">{description}</p>
       
       <div className="flex flex-wrap gap-2 mb-4">
         {technologies.map((tech) => (
           <span
             key={tech}
-            className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm"
+            className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm hover:bg-accent/20 transition-colors"
           >
             {tech}
           </span>
@@ -30,7 +30,7 @@ const ProjectCard = ({ title, description, githubUrl, demoUrl, technologies }: P
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center text-white hover:text-accent transition-colors"
+          className="flex items-center text-white hover:text-accent transition-all transform hover:scale-105 bg-secondary/50 px-4 py-2 rounded-full"
         >
           <Github className="w-5 h-5 mr-2" />
           Code
@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, githubUrl, demoUrl, technologies }: P
             href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-white hover:text-accent transition-colors"
+            className="flex items-center text-white hover:text-accent transition-all transform hover:scale-105 bg-secondary/50 px-4 py-2 rounded-full"
           >
             <ExternalLink className="w-5 h-5 mr-2" />
             Demo

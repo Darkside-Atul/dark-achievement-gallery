@@ -20,7 +20,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-primary relative overflow-hidden">
-      {/* Neural network inspired background with video */}
       <div className="fixed inset-0 bg-[#1A1F2C]">
         <video
           autoPlay
@@ -46,9 +45,8 @@ const Index = () => {
       <div className="relative z-10">
         <Navbar />
         
-        {/* Hero Section */}
         <section id="home" className="min-h-screen flex items-center justify-center pt-16">
-          <div className="absolute inset-0 bg-[url('/placeholder.svg')] opacity-5"></div>
+          <div className="absolute inset-0 bg-[url('./placeholder.svg')] opacity-5"></div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in bg-clip-text text-transparent bg-gradient-to-r from-accent to-white">
               Hi, I'm Atul Kumar
@@ -77,7 +75,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* About Section */}
         <section id="about" className="py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-accent to-white">About Me</h2>
@@ -101,7 +98,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects" className="py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-accent to-white">Projects</h2>
@@ -113,7 +109,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
         <section id="contact" className="py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-accent to-white">Get In Touch</h2>
